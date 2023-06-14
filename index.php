@@ -448,4 +448,47 @@ $uf = [
         'Expectativa de Vida (2016)' => '73,4 anos'
     ]
 ];
+
+echo '<table border=1>';
+
+echo '<tr>
+          <th>Bandeira</th>
+          <th>Unidade Federativa</th>
+          <th>Abreviação</th>
+          <th>Sede do Governo</th>
+          <th>Área (km²)</th>
+          <th>População (2014)</th>
+          <th>Densidade (2005)</th>
+          <th>PIB (2015)</th>
+          <th>(% total) (2015)</th>
+          <th>PIB per capita (R$) (2015)</th>
+          <th>IDH (2010)</th>
+          <th>Alfabetização (2016)</th>
+          <th>Mortalidade Infantil (2016)</th>
+          <th>Expectativa de Vida (2016)</th>
+      </tr>';
+
+      foreach ($uf as $i => $cod) {
+    echo '<tr>';
+    echo '<td><a href="' . $cod['Bandeira'] . '"><img src="' . $cod['Bandeira'] . '" alt="' . $cod['Unidade Federativa'] . '" width="55" height="40"></a></td>';
+    echo '<td>' . $cod['Unidade Federativa'] . '</td>';
+    echo '<td>' . $cod['Abreviação'] . '</td>';
+    echo '<td>' . $cod['Sede do Governo'] . '</td>';
+    echo '<td>' . $cod['Área'] . '</td>';
+    echo '<td>' . $cod['População'] . '</td>';
+    echo '<td>' . $cod['Densidade'] . '</td>';
+    echo '<td>' . $cod['Pib (2015)'] . '</td>';
+    echo '<td>' . $cod['Pib Percentual Total (2015)'] . '</td>';
+    echo '<td>' . $cod['Pib per capita'] . '</td>';
+    echo '<td>' . $cod['IDH (2010)'] . '</td>';
+    echo '<td>' . $cod['Alfabetização (2016)'] . '</td>';
+    echo '<td>' . $cod['Mortalidade Infantil (2016)'] . '</td>';
+    echo '<td>' . $cod['Expectativa de Vida (2016)'] . '</td>';
+    echo '</tr>';
+}
+
+echo '</table>';
 ?>
+    
+</body>
+</html>
