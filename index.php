@@ -13,6 +13,14 @@
         body{
             background-color: grey;
         }
+
+        th,
+        td {
+            color:white;
+            border: 1.5px solid whitesmoke;
+            padding: 7px;
+        }
+
     </style>
 </head>
 <body>
