@@ -9,6 +9,10 @@
           border-collapse: collapse;
           text-align: center;
         }
+
+        body{
+            background-color: grey;
+        }
     </style>
 </head>
 <body>
